@@ -1,4 +1,116 @@
 html, body {
     height: 100%;
     width: 100%;
+    font-family: sans-serif;
+}
+
+body {
+    transition: padding-left .5s;
+    padding-left: 0;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 200;
+    letter-spacing: 0.75em;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+hr {
+    border-top: 3px solid black;
+    margin: auto 25%;
+}
+
+blockquote {
+    font-family: cursive;
+    text-align: center;
+    font-size: 4em;
+}
+
+h2 {
+    font-weight: 200;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+nav {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    background-color: lightgrey;
+    margin: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+nav a {
+    color: white;
+    font-size: 1em;
+    font-weight: 200;
+    letter-spacing: 0.2em;
+    transition: 0.3s;
+    /*text-transform: uppercase;*/
+}
+
+nav li {
+    background-color: grey;
+    height: 4em;
+    margin: 1em 0;
+    width: auto;
+    text-align: center;
+    line-height: 4em;
+}
+
+nav ul {
+    text-align: center;
+    margin: 0;
+    padding-left: 0;
+}
+
+#open {
+    font-size: 3em;
+    position: absolute;
+    display: inline;
+    top: 0.2em;
+    border: none;
+    background-color: white;
+
+}
+
+header {
+    transition: 0.5s;
+}
+
+main {
+    position: absolute;
+    height: 80%;
+    width: 98%;
+    margin: auto;
+    overflow: hidden;
+    transition: 0.5s;
+    text-align: center;
+}
+figure {
+    /*border: 3px solid grey;*/
+    height: 70%;
+    width: 75%;
+    margin: 3.5em auto;
+    text-align: center;
+    overflow: hidden;
+    /*background: grey;*/
+    position: relative;
+}
+
+figure img {
+    width: 100%;
+    overflow: hidden;
 }
