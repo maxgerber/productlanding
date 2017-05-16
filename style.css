@@ -93,7 +93,7 @@ header {
 
 main {
     position: absolute;
-    height: 80%;
+    height: 90%;
     width: 98%;
     margin: auto;
     overflow: hidden;
@@ -101,13 +101,28 @@ main {
     text-align: center;
 }
 figure {
-    height: 65%;
+    height: 60%;
     width: 60%;
-    margin: 3.5em auto;
+    margin: 3em auto;
     text-align: center;
     overflow: hidden;
     position: relative;
-    transition: 2.5s;
-    background: url("1.jpg") center center / contain no-repeat;
+    border: 2px solid black;
+    box-shadow: 10px 7px 5px #d3cfcf;
+    padding: 1em;
+}
+
+#slideshow {
+    height: 88%;
+    width: 100%;
+    transition: 2.5s ease;
+    background: url("1.jpg") center center / cover no-repeat;
     background-size: auto 100%;
+}
+
+figcaption {
+    position: relative;
+    top: 0.9em;
+    font-size: 1.2em;
+    font-family: cursive;
 }
