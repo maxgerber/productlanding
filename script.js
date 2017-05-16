@@ -26,9 +26,19 @@ window.addEventListener("DOMContentLoaded", function() {
     }
 
     function slideShow () {
+        var imageExt = ".jpg",
+            imagePos = "center";
+
+        if ( imageNumber === 5 ) {
+            imageExt = ".gif";
+            imagePos = "bottom";
+        } else {
+            imageExt = ".jpg";
+        }
+
         document.getElementsByTagName("figure")[0].style.background =
-        "url('" + imageNumber + ".jpg') center center / cover no-repeat";
-        if ( imageNumber < 3 ) {
+        "url('" + imageNumber + imageExt + "') center " + imagePos + " / cover no-repeat";
+        if ( imageNumber < 5 ) {
             imageNumber++;
         } else {
             imageNumber = 1;
@@ -36,6 +46,6 @@ window.addEventListener("DOMContentLoaded", function() {
     }
 
 
-    window.setInterval(slideShow, 7000);
+    window.setInterval(slideShow, 5000);
     document.getElementById("open").addEventListener("click", toggleNav);
 });

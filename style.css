@@ -107,7 +107,7 @@ figure {
     text-align: center;
     overflow: hidden;
     position: relative;
-    transition: 1s;
-    background: url("1.jpg") center top / cover no-repeat;
+    transition: 2.5s;
+    background: url("1.jpg") center center / contain no-repeat;
     background-size: auto 100%;
 }
