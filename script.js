@@ -39,65 +39,57 @@ window.addEventListener("DOMContentLoaded", function() {
             case 2:
                 document.getElementById("slideshow").style.background = "url('" + imageNumber + imageExt + "') center " + imagePos + " / cover no-repeat";
                 document.getElementsByTagName("figcaption")[0].innerHTML = "Catch yourself drifting off when someone’s talking to you?";
-
                 break;
             case 3:
                 imagePos = "top";
                 document.getElementById("slideshow").style.background = "url('" + imageNumber + imageExt + "') center " + imagePos + " / cover no-repeat";
-                document.getElementsByTagName("figcaption")[0].innerHTML = "Will you come to and wonder why they’re looking at you with such intensity in their eyes?";
+                document.getElementsByTagName("figcaption")[0].innerHTML = " Why are they looking at you with such intensity?";
                 imagePos = "bottom";
                 break;
             case 4:
                 document.getElementById("slideshow").style.background = "url('" + imageNumber + imageExt + "') center " + imagePos + " / cover no-repeat";
-                document.getElementsByTagName("figcaption")[0].innerHTML = "Such care? Such worry?";
-
+                document.getElementsByTagName("figcaption")[0].innerHTML = "Such worry, such care";
                 break;
             case 5:
                 document.getElementById("slideshow").style.background = "url('" + imageNumber + imageExt + "') center " + imagePos + " / cover no-repeat";
                 document.getElementsByTagName("figcaption")[0].innerHTML = "Do you ever contemplate it all and think…";
-
                 break;
             case 6:
                 document.getElementById("slideshow").style.background = "url('" + imageNumber + imageExt + "') center " + imagePos + " / cover no-repeat";
-                document.getElementsByTagName("figcaption")[0].innerHTML = "If this was less boring";
-
+                document.getElementsByTagName("figcaption")[0].innerHTML = "\"<strong>If this was less boring</strong>";
                 break;
             case 7:
                 imageExt = ".gif";
                 imagePos = "bottom";
                 document.getElementById("slideshow").style.background = "url('" + imageNumber + imageExt + "') center " + imagePos + " / cover no-repeat";
-                document.getElementsByTagName("figcaption")[0].innerHTML = "Less trivial, less stupid";
+                document.getElementsByTagName("figcaption")[0].innerHTML = "<strong>Less trivial, less stupid</strong>";
                 imageExt = ".jpg";
                 imagePos = "center";
                 break;
             case 8:
                 document.getElementById("slideshow").style.background = "url('" + imageNumber + imageExt + "') center " + imagePos + " / cover no-repeat";
-                document.getElementsByTagName("figcaption")[0].innerHTML = "I’d be paying attention right now!";
-
+                document.getElementsByTagName("figcaption")[0].innerHTML = "<strong>I’d be paying attention right now!</strong>\"";
                 break;
             case 9:
                 document.getElementById("slideshow").style.background = "url('" + imageNumber + imageExt + "') center " + imagePos + " / cover no-repeat";
-                document.getElementsByTagName("figcaption")[0].innerHTML = "Well thanks to groundbreaking technology, you can find out!";
+                document.getElementsByTagName("figcaption")[0].innerHTML = "Well thanks to groundbreaking technology, you can find out:";
                 break;
             case 10:
                 document.getElementById("slideshow").style.background = "url('" + imageNumber + imageExt + "') center " + imagePos + " / cover no-repeat";
-                document.getElementsByTagName("figcaption")[0].innerHTML = "Welcome to the Fucks Finder.";
-
+                document.getElementsByTagName("figcaption")[0].innerHTML = "Welcome to the Fucks Finder!";
                 break;
             case 11:
                 document.getElementById("slideshow").style.background = "url('" + imageNumber + imageExt + "') center " + imagePos + " / cover no-repeat";
-                document.getElementsByTagName("figcaption")[0].innerHTML = "Utilising a patented state-of-the-art GPS locator";
-
+                document.getElementsByTagName("figcaption")[0].innerHTML = "We use state-of-the-art GPS location";
                 break;
             case 12:
                 imagePos = "top";
                 document.getElementById("slideshow").style.background = "url('" + imageNumber + imageExt + "') center " + imagePos + " / cover no-repeat";
-                document.getElementsByTagName("figcaption")[0].innerHTML = "to give a definitive answer to that question on everybody’s lips…";
-
+                document.getElementsByTagName("figcaption")[0].innerHTML = "to give a definitive answer to that question…";
                 break;
             case 13:
                 document.getElementById("slideshow").style.background = "url('" + imageNumber + imageExt + "') center " + imagePos + " / cover no-repeat";
-                document.getElementsByTagName("figcaption")[0].innerHTML = "\“<em>Where</em> are all those fucks I have to give?\”";
+                document.getElementsByTagName("figcaption")[0].innerHTML = "\“<strong>Just <em>where</em> are all those fucks I have to give?</strong>\”";
                 imageNumber = "1";
                 break;
         }
