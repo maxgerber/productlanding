@@ -27,6 +27,10 @@ window.addEventListener("DOMContentLoaded", function() {
         }
     }
 
+    function doNothing() {
+
+    }
+
     function slideShow () {
         var imageExt = ".jpg",
             imagePos = "center";
@@ -34,21 +38,23 @@ window.addEventListener("DOMContentLoaded", function() {
         switch ( imageNumber ) {
             case 1:
                 document.getElementById("slideshow").style.background = "url('" + imageNumber + imageExt + "') center " + imagePos + " / cover no-repeat";
-                document.getElementsByTagName("figcaption")[0].innerHTML = "Do you ever feel lost in the middle of a conversation?";
+                document.getElementsByTagName("figcaption")[0].innerHTML = "Do you ever feel lost in the middle of conversation?";
                 break;
             case 2:
+                imagePos = "top";
                 document.getElementById("slideshow").style.background = "url('" + imageNumber + imageExt + "') center " + imagePos + " / cover no-repeat";
-                document.getElementsByTagName("figcaption")[0].innerHTML = "Catch yourself drifting off when someone’s talking to you?";
+                document.getElementsByTagName("figcaption")[0].innerHTML = "Catch yourself drifting off?";
+                imagePos = "center";
                 break;
             case 3:
                 imagePos = "top";
                 document.getElementById("slideshow").style.background = "url('" + imageNumber + imageExt + "') center " + imagePos + " / cover no-repeat";
-                document.getElementsByTagName("figcaption")[0].innerHTML = " Why are they looking at you with such intensity?";
-                imagePos = "bottom";
+                document.getElementsByTagName("figcaption")[0].innerHTML = " Why are they looking at you like that?";
+                imagePos = "center";
                 break;
             case 4:
                 document.getElementById("slideshow").style.background = "url('" + imageNumber + imageExt + "') center " + imagePos + " / cover no-repeat";
-                document.getElementsByTagName("figcaption")[0].innerHTML = "Such worry, such care";
+                document.getElementsByTagName("figcaption")[0].innerHTML = "Do they want you to say something?";
                 break;
             case 5:
                 document.getElementById("slideshow").style.background = "url('" + imageNumber + imageExt + "') center " + imagePos + " / cover no-repeat";
@@ -91,6 +97,7 @@ window.addEventListener("DOMContentLoaded", function() {
                 document.getElementById("slideshow").style.background = "url('" + imageNumber + imageExt + "') center " + imagePos + " / cover no-repeat";
                 document.getElementsByTagName("figcaption")[0].innerHTML = "\“<strong>Just <em>where</em> are all those fucks I have to give?</strong>\”";
                 imageNumber = "1";
+                window.setTimeOut(doNothing, 3000);
                 break;
         }
         imageNumber++;
