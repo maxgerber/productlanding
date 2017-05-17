@@ -65,20 +65,20 @@ window.addEventListener("DOMContentLoaded", function() {
                 document.getElementsByTagName("figcaption")[0].innerHTML = "\"<strong>If this was less boring</strong>";
                 break;
             case 7:
+                document.getElementById("slideshow").style.background = "url('" + imageNumber + imageExt + "') center " + imagePos + " / cover no-repeat";
+                document.getElementsByTagName("figcaption")[0].innerHTML = "<strong>Less trivial, less stupid</strong>";
+                break;
+            case 8:
                 imageExt = ".gif";
                 imagePos = "bottom";
                 document.getElementById("slideshow").style.background = "url('" + imageNumber + imageExt + "') center " + imagePos + " / cover no-repeat";
-                document.getElementsByTagName("figcaption")[0].innerHTML = "<strong>Less trivial, less stupid</strong>";
+                document.getElementsByTagName("figcaption")[0].innerHTML = "<strong>Would I be paying attention right now?</strong>\"";
                 imageExt = ".jpg";
                 imagePos = "center";
                 break;
-            case 8:
-                document.getElementById("slideshow").style.background = "url('" + imageNumber + imageExt + "') center " + imagePos + " / cover no-repeat";
-                document.getElementsByTagName("figcaption")[0].innerHTML = "<strong>I’d be paying attention right now!</strong>\"";
-                break;
             case 9:
                 document.getElementById("slideshow").style.background = "url('" + imageNumber + imageExt + "') center " + imagePos + " / cover no-repeat";
-                document.getElementsByTagName("figcaption")[0].innerHTML = "Well thanks to groundbreaking technology, you can find out:";
+                document.getElementsByTagName("figcaption")[0].innerHTML = "Well thanks to groundbreaking technology, you can find the answer:";
                 break;
             case 10:
                 document.getElementById("slideshow").style.background = "url('" + imageNumber + imageExt + "') center " + imagePos + " / cover no-repeat";
@@ -91,7 +91,7 @@ window.addEventListener("DOMContentLoaded", function() {
             case 12:
                 imagePos = "top";
                 document.getElementById("slideshow").style.background = "url('" + imageNumber + imageExt + "') center " + imagePos + " / cover no-repeat";
-                document.getElementsByTagName("figcaption")[0].innerHTML = "to give a definitive answer to that question…";
+                document.getElementsByTagName("figcaption")[0].innerHTML = "to give a definitive answer to the question on everybodys' lips…";
                 break;
             case 13:
                 document.getElementById("slideshow").style.background = "url('" + imageNumber + imageExt + "') center " + imagePos + " / cover no-repeat";
